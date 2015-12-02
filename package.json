@@ -1,0 +1,42 @@
+{
+  "name": "is-valid-fodselsnummer-cli",
+  "description": "CLI for checking if input is a valid national identification number of Norway",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "Geir Gåsodden",
+    "email": "geir.gasodden@pythonia.no",
+    "url": "https://github.com/zrrrzzt"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "tap --reporter=spec test/*.js",
+    "coverage": "tap test/*.js --coverage",
+    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls"
+  },
+  "keywords": [
+    "Fødselsnummer",
+    "Fodselsnummer",
+    "Validation",
+    "National Identification Number",
+    "Norway"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/zrrrzzt/is-valid-fodselsnummer-cli.git"
+  },
+  "bugs": {
+    "url": "http://github.com/zrrrzzt/is-valid-fodselsnummer-cli/issues"
+  },
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "standard": "^5.4.1",
+    "tap": "^2.3.1"
+  },
+  "dependencies": {
+    "is-valid-fodselsnummer": "^1.0.8"
+  }
+}

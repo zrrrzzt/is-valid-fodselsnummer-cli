@@ -1,0 +1,7 @@
+[
+  "Check if input is a valid national identification number of Norway",
+  "Usage:",
+  "  $ is-valid-fodselsnummer <fodeselsnummer>",
+  "Returns true or false",
+  ""
+]
