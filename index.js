@@ -25,9 +25,3 @@ if (
 var isValid = isValidFodselsnummer(fodselsnummer)
 
 console.log(isValid)
-
-if (isValid) {
-  process.exit(0)
-} else {
-  process.exit(1)
-}
