@@ -37,11 +37,11 @@
     "url": "http://github.com/zrrrzzt/is-valid-fodselsnummer-cli/issues"
   },
   "devDependencies": {
-    "coveralls": "^2.11.4",
-    "standard": "^8.5.0",
-    "tap": "^8.0.0"
+    "coveralls": "2.11.4",
+    "standard": "8.5.0",
+    "tap": "8.0.0"
   },
   "dependencies": {
-    "is-valid-fodselsnummer": "^1.0.8"
+    "is-valid-fodselsnummer": "2.0.0"
   }
 }
