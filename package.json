@@ -43,6 +43,6 @@
     "tap": "8.0.0"
   },
   "dependencies": {
-    "is-valid-fodselsnummer": "2.0.0"
+    "is-valid-fodselsnummer": "2.0.1"
   }
 }
