@@ -3,5 +3,8 @@
   "Usage:",
   "  $ is-valid-fodselsnummer <fodeselsnummer>",
   "Returns true or false",
+  "",
+  "  $ is-valid-fodselsnummer <fodeselsnummer> --type",
+  "Returns F, D or false",
   ""
 ]

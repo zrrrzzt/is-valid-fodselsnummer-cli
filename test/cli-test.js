@@ -53,7 +53,7 @@ tap.test('It returns version with --version flag', function versionWithV (test) 
   })
 })
 
-tap.test('It returns fasle if fodselsnummer is invalid',
+tap.test('It returns false if fodselsnummer is invalid',
   function cliDefault (test) {
     exec('./index.js', ['12341234567'], function getDefault (error, stdout, stderr) {
       if (error) {
@@ -75,6 +75,48 @@ tap.test('It returns true if fodselsnummer is valid',
         throw error
       } else {
         test.equal(stdout.toString().trim(), 'true')
+        test.end()
+      }
+    })
+  }
+)
+
+tap.test('It returns F if fodselsnummer is type F',
+  function cliDefault (test) {
+    exec('./index.js', ['01010750160', '--type'], function getDefault (error, stdout, stderr) {
+      if (error) {
+        console.error(stderr.toString())
+        throw error
+      } else {
+        test.equal(stdout.toString().trim(), 'F')
+        test.end()
+      }
+    })
+  }
+)
+
+tap.test('It returns D if fodselsnummer is type D',
+  function cliDefault (test) {
+    exec('./index.js', ['41085801188', '--type'], function getDefault (error, stdout, stderr) {
+      if (error) {
+        console.error(stderr.toString())
+        throw error
+      } else {
+        test.equal(stdout.toString().trim(), 'D')
+        test.end()
+      }
+    })
+  }
+)
+
+tap.test('It returns false if fodselsnummer is invalid',
+  function cliDefault (test) {
+    exec('./index.js', ['12341234567', '--type'], function getDefault (error, stdout, stderr) {
+      if (error) {
+        console.error(stderr.toString())
+        throw error
+      } else {
+        test.equal(stdout.toString().trim(), 'false')
         test.end()
       }
     })

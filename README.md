@@ -3,6 +3,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # is-valid-fodselsnummer-cli
+
 CLI for checking if input is a valid [national identification number of Norway](https://en.wikipedia.org/wiki/National_identification_number#Norway)
 
 ## Installation
@@ -10,7 +11,7 @@ CLI for checking if input is a valid [national identification number of Norway](
 From npm
 
 ```sh
-$ npm install is-valid-fodselsnummer-cli -g
+$ npm i is-valid-fodselsnummer-cli -g
 ```
 
 From GitHub
@@ -33,6 +34,14 @@ Pass in fødselsnummer
 $ is-valid-fodselsnummer <fodselsnummer>
 ```
 
+Pass in fødselsnummer and -t or --type to identify type of number.
+Returns F if regular and D if D-number
+Returns false if invalid
+
+```sh
+$ is-valid-fodselsnummer <fodselsnummer> -t
+```
+
 To see version
 
 ```sh
@@ -45,4 +54,11 @@ $ is-valid-fodselsnummer -h
 ```
 
 ## Related
+
 - [is-valid-fodselsnummer](https://github.com/zrrrzzt/is-valid-fodselsnummer) API for this module
+
+## License
+
+[MIT](LICENSE)
+
+![Robohash image of is-valid-fodselsnummer-cli](https://robots.kebabstudios.party/is-valid-fodselsnummer-cli.png "Robohash image of is-valid-fodselsnummer-cli")
