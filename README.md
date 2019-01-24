@@ -60,5 +60,3 @@ $ is-valid-fodselsnummer -h
 ## License
 
 [MIT](LICENSE)
-
-![Robohash image of is-valid-fodselsnummer-cli](https://robots.kebabstudios.party/is-valid-fodselsnummer-cli.png "Robohash image of is-valid-fodselsnummer-cli")
