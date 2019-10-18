@@ -55,7 +55,7 @@ tap.test('It returns version with --version flag', function versionWithV (test) 
 
 tap.test('It returns false if fodselsnummer is invalid',
   function cliDefault (test) {
-    exec('./index.js', ['12341234567'], function getDefault (error, stdout, stderr) {
+    exec('./index.js', ['11111234567'], function getDefault (error, stdout, stderr) {
       if (error) {
         console.error(stderr.toString())
         throw error
@@ -111,7 +111,7 @@ tap.test('It returns D if fodselsnummer is type D',
 
 tap.test('It returns false if fodselsnummer is invalid',
   function cliDefault (test) {
-    exec('./index.js', ['12341234567', '--type'], function getDefault (error, stdout, stderr) {
+    exec('./index.js', ['11111234567', '--type'], function getDefault (error, stdout, stderr) {
       if (error) {
         console.error(stderr.toString())
         throw error
