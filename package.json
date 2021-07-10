@@ -39,7 +39,7 @@
     "url": "http://github.com/zrrrzzt/is-valid-fodselsnummer-cli/issues"
   },
   "devDependencies": {
-    "coveralls": "3.1.0",
+    "coveralls": "3.1.1",
     "standard": "16.0.3",
     "tap": "15.0.6"
   },
