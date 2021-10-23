@@ -44,6 +44,6 @@
     "tap": "15.0.10"
   },
   "dependencies": {
-    "is-valid-fodselsnummer": "3.0.5"
+    "is-valid-fodselsnummer": "4.0.0"
   }
 }
